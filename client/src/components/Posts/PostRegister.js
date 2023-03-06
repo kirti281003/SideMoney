@@ -15,21 +15,29 @@ function PostRegister()
     const[deadline,setDeadline]=useState("");
     const[steps,setsteps]=useState("");
     const[photo,setImage]=useState();
-    const{loading,error,post}=useSelector(state=>state.post)
-    useEffect(()=>
-    {dispatch(getUser());
-      
-     
-
-    },[dispatch])
+    const{loading,error,post,regpost}=useSelector(state=>state.post)
     const submitPost=(e)=>
     {e.preventDefault();
         
         dispatch(registerPost(heading,category,body,skills,deadline,steps,photo))
-        window.alert("Succesful Post");
-        window.location.href="/posts"
-      
   
+    }
+    useEffect(()=>
+    {dispatch(getUser());
+    if(regpost)
+    {
+        window.alert("Successfully Posted");
+        window.location.href="/posts";
+    }
+     if(error)
+     {
+        window.alert(error);
+     }
+
+    },[dispatch,error,regpost])
+    function close()
+    {
+        window.location.href="/posts";
     }
 
 
@@ -114,13 +122,13 @@ function PostRegister()
            </div>
            <div class="login_field">
            <label>Add Image</label>		
-            <input type="file" class="logininput" placeholder=" " onChange={(e)=>setImage(e.target.files[0])}/>
+            <input type="file" class="loginimageinput" placeholder=" " onChange={(e)=>setImage(e.target.files[0])}/>
             </div>
             <hr style={{color:"white"}}></hr>
             
             <div className="button_section">
                 <button className="green">Submit</button>
-                <button className="white">Close</button>
+                <button className="white" onClick={close}>Close</button>
             </div>
              </form>
         </>

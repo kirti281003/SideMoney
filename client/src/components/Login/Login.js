@@ -16,10 +16,7 @@ function Login()
     const loginSubmit=(e)=>
     {e.preventDefault();
         dispatch(login(email,password))
-        if(error)
-        {
-            window.alert(error);
-        }
+      
       
   
     }
@@ -30,9 +27,13 @@ function Login()
         
            
         }  
+        if(error)
+        {
+            window.alert(error);
+        }
        
 
-    },[isAuthenticated])
+    },[isAuthenticated,error])
 
 //     return(
 //         <>
@@ -77,7 +78,7 @@ return(
         <div className="logintop">
         <span>START YOUR JOURNEY</span>
         <h1>Sign In Now!</h1>
-        <span>Don't have an account?<Link className="signup">Sign Up</Link></span>
+        <span>Don't have an account?<Link className="signup" to="/signup">Sign Up</Link></span>
         </div>
         <div class="loginfield">
         <h1 className="loginhead">E-mail</h1>

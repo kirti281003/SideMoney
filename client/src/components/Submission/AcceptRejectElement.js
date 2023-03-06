@@ -60,7 +60,7 @@ dispatch(getUser())
 return(
     <>
         <div class="acceptcard">
-            <div class=" namecard">{sub.username} </div>
+            <div class=" namecard">{sub.name} </div>
                <h1>{sub.username}<i class=" arrow fa fa-regular fa-arrow-up-right-from-square" onClick={viewsubfunc}></i></h1>
                <h6>Date : 1st March,2023</h6>
 

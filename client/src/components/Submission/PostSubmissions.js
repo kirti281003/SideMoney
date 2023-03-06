@@ -21,7 +21,15 @@ const PostSubmissions=()=>
         dispatch(postsubmissions(id))
         dispatch(getUser())
     },[dispatch])
-
+    if(visible>subs.length){
+        var  style={
+            backgroundColor:"#282828",
+            
+          }
+          var btnstyle={
+            color:"#282828"
+          }
+        }
     
     return(
         <>
@@ -39,8 +47,8 @@ const PostSubmissions=()=>
             )
         }
         </div>
-        <div className="showmore">
-        <button onClick={showMoreItems} >Show More</button>
+        <div className="showmore" style={style}>
+        <button onClick={showMoreItems} style={btnstyle} >Show More</button>
         </div>
         </>
     )

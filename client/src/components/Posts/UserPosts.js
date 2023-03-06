@@ -26,6 +26,15 @@ function UserPosts()
   {
     window.location.href="/createPost";
   }
+  if(visible>posts.length){
+    var  style={
+        backgroundColor:"#282828",
+        
+      }
+      var btnstyle={
+        color:"#282828"
+      }
+    }
     return(
         <> 
         <div className="gradient">
@@ -46,8 +55,8 @@ function UserPosts()
         ))}
         
         </div>
-        <div className="showmore">
-        <button onClick={showMoreItems} >Show More</button>
+        <div className="showmore" style={style}>
+        <button onClick={showMoreItems} style={btnstyle}>Show More</button>
         </div>
         {/* <input type="submit" name="logout" onClick={logoutSubmit}/> */}
           

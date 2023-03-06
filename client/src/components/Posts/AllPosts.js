@@ -11,16 +11,26 @@ function AllPosts()
 {
   const [visible, setVisible] = useState(3);
 
+
   const showMoreItems = () => {
     setVisible((prevValue) => prevValue + 6);
     
   };
   
+  
   const[keyword,setQuery]=useState("");
     const dispatch=useDispatch();
     const{loading,error,posts}=useSelector(state=>state.posts)
     const {isAuthenticated,user}=useSelector(state=>state.user);
-    console.log(isAuthenticated);
+    if(visible>posts.length){
+    var  style={
+        backgroundColor:"#282828",
+        
+      }
+      var btnstyle={
+        color:"#282828"
+      }
+    }
     const filter=()=>
     {dispatch(allPosts(keyword))
 
@@ -30,8 +40,8 @@ function AllPosts()
     {
         dispatch(getUser())
         dispatch(allPosts())
+      
        
-        
     },[dispatch])
 
 
@@ -45,7 +55,7 @@ function AllPosts()
           <div className="gradient">
           <h1>FIND OPPORTUNITIES</h1>
           <div className="searchbox">
-            <input type="text" placeholder="What are you looking for?" onChange={(e)=>setQuery(e.target.value)}/>
+            <input type="text" placeholder="Search By Category" onChange={(e)=>setQuery(e.target.value)}/>
             <img src={search} onClick={filter}></img>
           </div>
           </div>
@@ -63,8 +73,8 @@ function AllPosts()
         ))}
         
         </div>
-        <div className="showmore">
-        <button onClick={showMoreItems} >Show More</button>
+        <div className="showmore" style={style}>
+        <button  onClick={showMoreItems} style={btnstyle}>Show More</button>
         </div>
           
         </>

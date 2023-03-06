@@ -21,18 +21,32 @@ function SubmissionRegister()
     const[link3,setLink3]=useState("");
     const links=[{title:link1head,url:link1},{title:link2head,url:link2},{title:link3head,url:link3}];
     const {post}=useSelector(state=>state.post)
+    const{error,postsub}=useSelector(state=>state.sub)
+console.log(postsub);
     useEffect(()=>
     {
          dispatch(getPost(id));
+        if(error)
+        {
+            window.alert(error);
+        }
+        if(postsub)
+        {window.alert("Succesful Submission ,check your profile for updates")
+            window.location.href="/posts";
+        }
 
-    },[dispatch])
+
+    },[dispatch,error,postsub])
     const name=post.heading;
     const submitSub=(e)=>
     {e.preventDefault();
         dispatch(registerSub(body,JSON.stringify(links),photo,id,name))
-        window.alert("Successful Submission,Keep Checking Status On Your Profile");
-        window.location.href="/posts";
 
+
+    }
+    function close()
+    {
+        window.location.href="/posts";
     }
     return(
         <>
@@ -50,37 +64,37 @@ function SubmissionRegister()
          
                 <div class="login_field">
                 <label>Link 1</label>
-                <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink1head(e.target.value)}
+                <input type="text" class="sign__input" placeholder=" Title " style={{color:"white"}} onChange={(e)=>setLink1head(e.target.value)}
                     />
-					<input type="text" class="logininput" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink1(e.target.value)}
+					<input type="text" class="logininput" placeholder=" Enter The Link" style={{color:"white"}} onChange={(e)=>setLink1(e.target.value)}
                     />
 				</div>
                 
                 <div class="login_field">
                 <label>Link 2</label>
-                <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink2head(e.target.value)}
+                <input type="text" class="sign__input" placeholder="  Title" style={{color:"white"}} onChange={(e)=>setLink2head(e.target.value)}
                     />
-					<input type="text" class="logininput" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink2(e.target.value)}
+					<input type="text" class="logininput" placeholder=" Enter The Link" style={{color:"white"}} onChange={(e)=>setLink2(e.target.value)}
                     />
 				</div>
               
                 <div class="login_field">
                 <label>Link 3</label>
-                <input type="text" class="sign__input" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink3head(e.target.value)}
+                <input type="text" class="sign__input" placeholder=" Title " style={{color:"white"}} onChange={(e)=>setLink3head(e.target.value)}
                     />
-					<input type="text" class="logininput" placeholder=" " style={{color:"white"}} onChange={(e)=>setLink3(e.target.value)}
+					<input type="text" class="logininput" placeholder=" Enter The Link" style={{color:"white"}} onChange={(e)=>setLink3(e.target.value)}
                     />
 				</div>
                 
                 <div class="login_field">
                 <label>Add Image</label>
-					<input type="file" class="logininput" placeholder=" "  onChange={(e)=>setImage(e.target.files[0])}
+					<input type="file" class="loginimageinput" placeholder=" "  onChange={(e)=>setImage(e.target.files[0])}
                     />
 				</div>
                 <hr></hr>
                 <div className="button__section">
                 <button className="green1">Submit</button>
-                <button className="white">Close</button>
+                <button className="white" onClick={close}>Close</button>
             </div>
                
             </form>

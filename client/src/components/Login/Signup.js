@@ -18,10 +18,7 @@ function Signup()
     const registerSubmit=(e)=>
     {e.preventDefault();
         dispatch(register(email,password,name,username))
-        if(error)
-        {
-            window.alert(error);
-        }
+     
 
   
     }
@@ -30,13 +27,16 @@ function Signup()
         if(isAuthenticated)
         {
             window.alert("Successful");
-            window.location.href=`/user`;
+            window.location.href=`/posts`;
         }
-
+        if(error)
+        {
+            window.alert(error);
+        }
     
         
 
-    },[isAuthenticated])
+    },[isAuthenticated,error])
 
 //    return(
 //         <>
@@ -91,9 +91,9 @@ return(
         <img src={spiralleft} className="spiralright"/>
         <form class="sign" onSubmit={registerSubmit} method="POST" action="/login">
         <div className="signtop">
-        <span>START YOUR JOURNEY</span>
-        <h1>Sign In Now!</h1>
-        <span>Don't have an account?<Link className="signup">Sign Up</Link></span>
+        <span>REGISTER NOW</span>
+        <h1>Sign Up For Free!</h1>
+        <span>Already have an account?<Link className="signup" to="/login">Login</Link></span>
         </div>
              <div class="loginfield">
              <h1 className="signhead">Name</h1>

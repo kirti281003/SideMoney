@@ -1,13 +1,14 @@
 import { ALL_POST_FAIL, ALL_POST_REQUEST, ALL_POST_SUCCESS, POST_FAIL, POST_REQUEST, POST_SUCCESS, REGISTER_POST_FAIL, REGISTER_POST_REQUEST, REGISTER_POST_SUCCESS, USER_POST_FAIL, USER_POST_REQUEST, USER_POST_SUCCESS } from "../constants/postConstants";
 
-export const postReducer = (state = { post:{}}, action) => {
+export const postReducer = (state = { post:{},regpost:false}, action) => {
 
     switch (action.type) {
       case REGISTER_POST_REQUEST:
         case POST_REQUEST:
         return {
           loading: true,
-          post:{}
+          post:{},
+          regpost:false
         };
       case REGISTER_POST_SUCCESS:
         case POST_SUCCESS:
@@ -15,6 +16,7 @@ export const postReducer = (state = { post:{}}, action) => {
           ...state,
           loading: false,
           post: action.payload,
+          regpost:true
         };
         case REGISTER_POST_FAIL:
           case POST_FAIL:
@@ -23,6 +25,7 @@ export const postReducer = (state = { post:{}}, action) => {
                 ...state,
                 loading: false,
                 error: action.payload,
+                regpost:false
               };
         default:
                 return state;

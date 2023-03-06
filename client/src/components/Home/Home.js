@@ -21,7 +21,10 @@ console.log(isAuthenticated);
 
     // },[dispatch])
  
-
+function toSignUp()
+{
+    window.location.href="/signup"
+}
     return(
         <>
             {/* <div className="HomeContainer">
@@ -42,7 +45,7 @@ console.log(isAuthenticated);
             <h1>Earn</h1>
             <h2>Side Money</h2>
             <div>"Boost Your Income with flexible side hustles"</div>
-            <button className="join">Join Today</button>
+            <button className="join" onClick={toSignUp}>Join Today</button>
             </div>
             <img src={homeright} className="homeright"></img>
           

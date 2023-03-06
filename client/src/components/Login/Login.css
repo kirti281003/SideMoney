@@ -51,6 +51,7 @@ font-style: normal;
     background:transparent;
     border:1px solid white;
     color:white;
+    padding:1rem;
 }
 .loginsubmit{
     margin-top: 2rem;
