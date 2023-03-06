@@ -5,6 +5,7 @@
     border:1px solid black;
     height:21vw;;
     width:18vw;
+    margin-top: 3rem;
 
 }
 .postcard h1{
@@ -67,6 +68,13 @@ h6{
     margin-left: 1rem;
     color:white
 }
+.righttrash{
+    background-color:transparent;
+    color:white;
+    border:none;
+    margin-left: 1rem;
+}
+
 @media(max-width:700px)
 {
     
@@ -107,7 +115,7 @@ h6{
     margin:3rem;
 }
 .linkButton{
-    background-color: white;
+    background-color:white;
     color:#247A4D;
     text-decoration: none;
     padding-top: 0.6rem;

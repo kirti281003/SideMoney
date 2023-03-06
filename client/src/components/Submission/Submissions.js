@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { submissions } from "../../actions/subAction";
 import { getUser } from "../../actions/userActions";
@@ -6,7 +6,12 @@ import SubElement from "./SubElement";
 import "./PostSubmissions.css";
 
 const Submissions=()=>
-{const dispatch=useDispatch();
+{  const [visible, setVisible] =useState(3);
+
+    const showMoreItems = () => {
+      setVisible((prevValue) => prevValue + 3);
+    };
+    const dispatch=useDispatch();
     const{subs,loading}=useSelector(state=>state.subs)
     useEffect(()=>
     {
@@ -21,7 +26,7 @@ const Submissions=()=>
         <div className="flexbox">
         {
             subs &&
-            subs.map(sub=>
+            subs.slice(0,visible).map(sub=>
             (
                 <SubElement sub={sub}/>
             )
@@ -29,7 +34,9 @@ const Submissions=()=>
             )
         }
         </div>
-
+        <div className="showmore">
+        <button onClick={showMoreItems} >Show More</button>
+        </div>
         </>
     )
 

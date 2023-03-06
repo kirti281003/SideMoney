@@ -1,5 +1,5 @@
 .HomeContainer{
-    height:100vh;
+    height:60vh;
 }
 .homehead{
     position: absolute;
@@ -34,10 +34,23 @@
     border-radius: 5px;
     margin-top: 1rem;
 }
+.explorepage{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10rem;
+}
+.homegradient{
+    position: absolute;
+    left:0;
+    bottom:10rem;
+}
 @media(max-width:700px)
 {
     .HomeContainer{
-        height:100vh;
+        height:32vh;
     }
     .homehead{
         position: absolute;
@@ -72,7 +85,14 @@
         border-radius: 5px;
         margin-top: 1rem;
     }
-
+    .explorepage{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:10rem;
+    }
 }
 /* .HomeContainer{
     height:100vh;

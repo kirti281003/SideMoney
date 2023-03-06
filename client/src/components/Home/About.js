@@ -9,13 +9,9 @@ function About(){
         <div className="aboutcontainer">
             <h1>About</h1>
             <div className="aboutbody">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration 
-            in some form, by injected humour, or randomised words which don't look even slightly believable.
-             If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-              All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-               making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, 
-               combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
-            The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            Welcome to Earn Side Money, your go-to platform for finding flexible and convenient ways to earn extra income. Our platform is designed to connect you with a range of side hustle opportunities that fit around your lifestyle and schedule. 
+At Earn Side Money, we understand that life can be expensive, and sometimes, the regular pay check just isn't enough to cover all of your expenses. That's why we've created a user-friendly platform that provides easy access to a variety of side hustles, all in one place. Our platform allows you to post your own opportunities, and you can also apply for opportunities posted by others. This flexibility ensures that there is always something available for everyone, no matter what your skills, experience or schedule may be. Whether you're looking to earn a few extra bucks in your spare time or want to turn a side hustle into a full-time gig, we've got you covered. At Earn Side Money, we prioritize safety and security, ensuring that all our users are verified and trustworthy. We also provide a range of tools and resources to help you make the most of your side hustle, including tips for increasing your earnings and managing your time.
+Join the Earn Side Money community today and start earning extra income on your own terms.
             </div>
         </div>
         <img src={topright} className="topright"></img>

@@ -67,6 +67,12 @@
     border: none;
     
   }
+  .deletesub{
+    background-color: transparent;
+    color:white;
+    border: none;
+    margin-left: 1rem;
+  }
   @media(max-width:700px)
   {
     .acceptcard{

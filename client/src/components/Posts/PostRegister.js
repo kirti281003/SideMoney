@@ -27,7 +27,7 @@ function PostRegister()
         
         dispatch(registerPost(heading,category,body,skills,deadline,steps,photo))
         window.alert("Succesful Post");
-        window.location.href="/user"
+        window.location.href="/posts"
       
   
     }

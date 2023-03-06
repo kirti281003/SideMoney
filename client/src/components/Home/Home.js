@@ -2,6 +2,7 @@ import "./Home.css";
 import Vectorleftlight from "../../images/Vectorleftlight.png";
 import Vectorleftdark from "../../images/Vectorleftdark.png";
 import homeright from "../../images/homeright.png";
+import homegradient from "../../images/homegradient.png";
 import homeleft from "../../images/homeleft.png";
 import down from "../../images/down.png";
 import Explore from "./ExplorePage";
@@ -9,6 +10,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser } from "../../actions/userActions";
 import { useEffect } from "react";
+import HomeCard from "./HomeCard";
 function Home()
 {const{isAuthenticated}=useSelector(state=>state.user);
 console.log(isAuthenticated);
@@ -43,10 +45,18 @@ console.log(isAuthenticated);
             <button className="join">Join Today</button>
             </div>
             <img src={homeright} className="homeright"></img>
-            <div className="explorepage">
-                
-            </div>
+          
+            
            </div>
+
+<hr></hr>
+           <div className="explorepage">
+          
+            <HomeCard text="Hire People For Work"></HomeCard>
+            <HomeCard text= "Find Opportunities To Work"></HomeCard>
+<HomeCard text="Get A Chance To Earn"></HomeCard>
+
+            </div>
         </>
     )
     

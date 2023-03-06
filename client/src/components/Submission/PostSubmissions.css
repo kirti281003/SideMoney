@@ -1,3 +1,20 @@
 .flexbox{
     margin-top: 2rem;
 }
+.showmore{
+    background-color: #247A4D;
+    color:white;
+    margin-left: auto;
+    border:none;
+    margin-right: auto;
+    width:10rem;
+    margin-top: 3rem;
+    text-align: center;
+    padding:1rem;
+    border-radius: 5px;
+}
+.showmore button{
+    background-color: transparent;
+    color:white;
+    border:none;
+}

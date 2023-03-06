@@ -8,7 +8,15 @@ const { useDispatch, useSelector } = require("react-redux");
 
 
 function AllPosts()
-{const[keyword,setQuery]=useState("");
+{
+  const [visible, setVisible] = useState(3);
+
+  const showMoreItems = () => {
+    setVisible((prevValue) => prevValue + 6);
+    
+  };
+  
+  const[keyword,setQuery]=useState("");
     const dispatch=useDispatch();
     const{loading,error,posts}=useSelector(state=>state.posts)
     const {isAuthenticated,user}=useSelector(state=>state.user);
@@ -20,10 +28,9 @@ function AllPosts()
 
     useEffect(()=>
     {
-        // dispatch(getUser())
-        dispatch(allPosts())
         dispatch(getUser())
-  
+        dispatch(allPosts())
+       
         
     },[dispatch])
 
@@ -46,15 +53,18 @@ function AllPosts()
         <div className="Post">
    
       
-        {posts &&
-        posts.map(post=>(
+        {
+        posts.slice(0,visible).map(post=>(
         
-       <PostCard key={post._id} post={post} url={`/post/${post._id}`} name="View" name2="Apply" url2={`/createSubmission/${post._id}/${post.heading}`} />  
+       <PostCard key={post._id} post={post} url={`/post/${post._id}`} name="View" name2="Apply" url2={`/createSubmission/${post._id}`} />  
        
      
 
         ))}
         
+        </div>
+        <div className="showmore">
+        <button onClick={showMoreItems} >Show More</button>
         </div>
           
         </>

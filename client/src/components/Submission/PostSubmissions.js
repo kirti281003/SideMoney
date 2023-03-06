@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { postsubmissions, submissions } from "../../actions/subAction";
@@ -7,7 +7,12 @@ import AcceptRejectElement from "./AcceptRejectElement";
 import "./PostSubmissions.css";
 
 const PostSubmissions=()=>
-{const dispatch=useDispatch();
+{  const [visible, setVisible] =useState(3);
+
+    const showMoreItems = () => {
+      setVisible((prevValue) => prevValue + 3);
+    };
+    const dispatch=useDispatch();
     const{id}=useParams();
     const{subs,loading}=useSelector(state=>state.subs)
     console.log(subs);
@@ -26,7 +31,7 @@ const PostSubmissions=()=>
          <div className="flexbox">
         {
             subs &&
-            subs.map(sub=>
+            subs.slice(0,visible).map(sub=>
             (
               <AcceptRejectElement sub={sub} id={id}/>
             )
@@ -34,7 +39,9 @@ const PostSubmissions=()=>
             )
         }
         </div>
-
+        <div className="showmore">
+        <button onClick={showMoreItems} >Show More</button>
+        </div>
         </>
     )
     

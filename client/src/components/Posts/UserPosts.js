@@ -5,11 +5,15 @@ import "./AllPosts.css";
 import PostCard from "./PostCard";
 import "./UserPosts.css";
 
-const { useEffect } = require("react");
+const { useEffect, useState } = require("react");
 const { useDispatch, useSelector } = require("react-redux")
 
 function UserPosts()
-{
+{  const [visible, setVisible] =useState(3);
+
+    const showMoreItems = () => {
+      setVisible((prevValue) => prevValue + 3);
+    };
     const dispatch=useDispatch();
     const{loading,error,posts}=useSelector(state=>state.posts)
     useEffect(()=>
@@ -34,12 +38,16 @@ function UserPosts()
                   <div class="Post">
                  
         {posts &&
-        posts.map(post=>(
+        posts.slice(0,visible).map(post=>(
             <>
             <PostCard post={post} url={`/post/${post._id}`} name="View" url2={`/postSubmission/${post._id}`} name2="Requests" trash={<i class=" fas fa-trash"></i>}/>
             
             </>
         ))}
+        
+        </div>
+        <div className="showmore">
+        <button onClick={showMoreItems} >Show More</button>
         </div>
         {/* <input type="submit" name="logout" onClick={logoutSubmit}/> */}
           

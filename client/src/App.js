@@ -36,7 +36,7 @@ console.log(isAuthenticated);
       <Header/>  
       <Routes>
         <Route path="/createPost" element={<PostRegister/>}/>
-        <Route path="/createSubmission/:id/:name" element={<SubmissionRegister/>}/>
+        <Route path="/createSubmission/:id" element={<SubmissionRegister/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/posts" element={<AllPosts/>}/>
@@ -74,7 +74,7 @@ console.log(isAuthenticated);
             <Route path="/explore" element={<Explore/>}/>
             <Route path="/user" element={<User/>}/>
             <Route path="/post/:id" element={<Post/>}/>
-            <Route path="/createSubmission/:id/:name" element={<SubmissionRegister/>}/>
+            <Route path="/createSubmission/:id" element={<SubmissionRegister/>}/>
             <Route path="/getSubmission/:id" element={<SubmissionPage/>}/>
             <Route path="/user/submissions" element={<Submissions/>}/>
             <Route path="/postSubmission/:id" element={<PostSubmissions/>}/>

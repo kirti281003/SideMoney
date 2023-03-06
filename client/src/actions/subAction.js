@@ -8,8 +8,8 @@ export const registerSub=(body,links,photo,id,name)=>async(dispatch)=>{
         const config = { headers: { "Content-Type": " multipart/form-data " } };
     
         const { data } = await axios.post(
-          `/api/v1/setSubmission/${id}/${name}`,
-          { body,links,photo },
+          `/api/v1/setSubmission/${id}`,
+          { body,links,photo,name },
           config
         );
         console.log(data);

@@ -1,7 +1,7 @@
 import React,{Fragment, useEffect, useState} from "react";
 import { useParams } from 'react-router-dom';
 import { useSelector,useDispatch } from "react-redux";
-import { registerPost } from "../../actions/postActions";
+import { getPost, registerPost } from "../../actions/postActions";
 import { getUser } from "../../actions/userActions";
 import loginImage from "../../images/login.png";
 import "./SubmissionRegister.css";
@@ -10,7 +10,7 @@ import { registerSub } from "../../actions/subAction";
 function SubmissionRegister()
 {const dispatch=useDispatch();
 
-    const {id,name}=useParams();
+    const {id}=useParams();
     const[body,setBody]=useState("");
     const[photo,setImage]=useState();
     const[link1head,setLink1head]=useState("");
@@ -20,15 +20,19 @@ function SubmissionRegister()
     const[link3head,setLink3head]=useState("");
     const[link3,setLink3]=useState("");
     const links=[{title:link1head,url:link1},{title:link2head,url:link2},{title:link3head,url:link3}];
+    const {post}=useSelector(state=>state.post)
     useEffect(()=>
-    {dispatch(getUser());  
+    {
+         dispatch(getPost(id));
 
     },[dispatch])
+    const name=post.heading;
     const submitSub=(e)=>
     {e.preventDefault();
         dispatch(registerSub(body,JSON.stringify(links),photo,id,name))
-        window.alert("Successful Submission,Keep Checking Status On Your Profile")
-        window.location.href="/user"
+        window.alert("Successful Submission,Keep Checking Status On Your Profile");
+        window.location.href="/posts";
+
     }
     return(
         <>

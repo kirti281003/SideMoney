@@ -17,7 +17,7 @@ const Post=()=>{
     },[dispatch])
     function tosub()
     {
-        window.location.href=`/createSubmission/${post._id}/${post.heading}`;
+        window.location.href=`/createSubmission/${post._id}`;
     }
       
     const skills=post.skills;

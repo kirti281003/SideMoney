@@ -48,13 +48,15 @@ window.location.href="/posts/user";
 return(
     <>
         <div className="postcard">
-            <h1>{post.heading}</h1>
+       
+      
+            <h1>{post.heading}  <button className="righttrash" onClick={del}>{trash}</button></h1>
+         
             <h3>Deadline : {post.deadline}</h3>
             <h6>Description</h6>
             <p>{post.body.substring(0,100)}...</p>
      
             <div className="buttonsection">
-
             <Link to={url2} className="subLink">{name2}</Link>
             <Link to={url} className="linkButton">{name}</Link>                      
             </div>
