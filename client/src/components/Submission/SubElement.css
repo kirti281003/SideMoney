@@ -1,0 +1,133 @@
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .acceptcard{
+    background-color: #282828;
+    box-shadow: 0px 0px 12px black;
+    border:1px solid black;
+    width:16vw;
+    height:10vw;
+    border-radius:10px;
+
+  }
+  .namecard{
+    background-color: #247A4D;
+    color:white;
+    width:10rem;
+    height:1.8rem;
+    border-radius:5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+  .viewsubbutton{
+    background-color: none;
+    margin-left: 5rem;
+  }
+  .acceptcard h1{
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+ 
+  }
+  .arrow{
+    margin-left: 2rem;
+  }
+  .acceptcard h6{
+    color:white;
+    font-size: 1.2rem;
+    margin-top:0.5rem;
+    text-align: center;
+  }
+  .decision{
+    width:15vw;
+    margin-top:2rem;
+  }
+  .accept{
+    background-color: #247A4D;
+    color:white;
+    text-align: center;
+    width:5rem;
+    border: none;
+    margin-left:2rem;
+    margin-right:1.5rem;
+  }
+  .reject{
+    background-color: #6F0000;
+    color:white;
+    text-align: center;
+    width:5rem;
+    border: none;
+    
+  }
+  @media(max-width:700px)
+  {
+    .acceptcard{
+        background-color: #282828;
+        box-shadow: 0px 0px 12px black;
+        border:1px solid black;
+        width:60vw;
+        height:60vw;
+        border-radius:10px;
+    
+      }
+      .namecard{
+        background-color: #247A4D;
+        color:white;
+        width:10rem;
+        height:1.8rem;
+        border-radius:5px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+      }
+      .viewsubbutton{
+        background-color: none;
+        margin-left: 5rem;
+      }
+      .acceptcard h1{
+        color:white;
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0;
+     
+      }
+      .arrow{
+        margin-left: 2rem;
+      }
+      .acceptcard h6{
+        color:white;
+        font-size: 1.2rem;
+        margin-top:0.5rem;
+        text-align: center;
+      }
+      .decision{
+        width:15vw;
+        margin-top:2rem;
+      }
+      .accept{
+        background-color: #247A4D;
+        color:white;
+        text-align: center;
+        width:5rem;
+        border: none;
+        margin-left:2rem;
+        margin-right:1.5rem;
+      }
+      .reject{
+        background-color: #6F0000;
+        color:white;
+        text-align: center;
+        width:5rem;
+        border: none;
+        
+      }
+  }

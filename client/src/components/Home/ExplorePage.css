@@ -1,0 +1,44 @@
+#explore{
+    
+    margin-bottom:0rem;
+}
+.explorecontainer{
+    width:100vw;
+    height:70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+.explorecontainer Link{
+    text-decoration: none;
+}
+.checkAuth{
+    width:20rem;
+    height:15rem;
+}
+.exploreImg{
+    height:1rem;
+    transform: rotate(180deg);
+}
+.explorearrow{
+    margin-right: auto;
+    margin-left: auto;
+    width:1rem;
+    padding:6em;
+}
+.exploreVector{
+    position: relative;
+    bottom: 0;
+    right:0;
+}
+@media(max-width:1024px)
+{
+    .explorecontainer{
+        width:100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top:3rem;
+    }
+}

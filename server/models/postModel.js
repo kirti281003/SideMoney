@@ -1,0 +1,46 @@
+const mongoose=require("mongoose");
+const postSchema=new mongoose.Schema({
+    user:{
+        type:mongoose.Schema.ObjectId,
+        ref:"User",
+        required:true
+    },
+    heading:{
+        type:String,
+        required:true
+    },
+    category:{
+        type:String,
+        required:true
+    },
+    body:{
+        type:String,
+        required:true
+    },
+    username:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
+    },
+    deadline:{
+        type:String,
+        required:true
+    },
+    skills:{
+        type:String
+    },
+    postedOn:{
+        type:Date,
+        default:Date.now()
+    },
+    steps:{
+        type:String
+    },
+   image:{
+    type:String
+   }
+})
+module.exports=mongoose.model("Post",postSchema);

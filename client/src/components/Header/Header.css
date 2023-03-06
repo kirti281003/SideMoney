@@ -1,0 +1,280 @@
+/* .nav-inline{
+    display:inline;
+    position: absolute;
+    right:0rem;
+    top:0rem;
+    z-index: 1000000;
+    width:100vw;
+background:transparent;
+}
+.logo{
+    height:8rem;
+    position: absolute;
+    top:-2rem;
+    z-index:1000;
+}
+.head-link{
+    font-size:1.15rem;
+    font-weight: bold;
+    
+}
+.head-link:active{
+    background-color:#298ccd ;
+    width:5rem;
+    text-align: center;
+    border-radius:20px;
+    text-decoration: underline;
+}
+.head-link:hover{
+    background-color:#298ccd ;
+    width:5rem;
+    text-align: center;
+    border-radius:20px;
+    text-decoration: underline;
+    color:white;
+    font-weight: bolder;
+}
+.avatar{
+    height:2rem;
+}
+.logoutButton{
+    border:0px;
+}
+@media(max-width:1024px)
+{
+    .head-link{
+        font-size:1.15rem;
+        font-weight: bolder;
+        margin-right:-5rem;
+    }
+    .nav-inline{
+        display:inline;
+        position: absolute;
+        right:0rem;
+        top:0rem;
+        z-index: 100;
+        width:auto;
+        }
+} */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration:none;
+  list-style:none;
+}
+body {
+  font-family:montserrat;
+
+}
+nav {
+  height:80px;
+  /* background: rgb(33, 32, 32); */
+  width:100vw;
+}
+label.logo img{
+  /* color:white;
+  line-height:80px;
+  font-size: 35px;
+  padding:0 100px;
+  font-weight:bold; */
+margin-top: -3rem;
+margin-left: 3rem;
+}
+.clubname{
+    display: inline-block;
+    margin-left:1rem;
+    margin-top: 1rem;
+}
+.clubname h3{
+    margin-top:-2rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.6rem;
+}
+.clubname h2{
+    margin-top:0rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1.6rem;
+}
+nav ul {
+  float: right;
+  margin-right:4rem;
+  z-index:10000;
+}
+nav ul li {
+  line-height:80px;
+  display:inline-block;
+  margin:-1rem 2rem;
+}
+nav ul li a {
+  text-transform:uppercase;
+  font-size: 16px;
+color:white;
+font-weight: bold;
+  padding:7px 13px;
+  border-radius:3px;
+  text-decoration: none;
+}
+a.active,a:hover {
+  background: #1C603F;
+  transition:0.5s;
+
+}
+.checkbtn {
+  font-size:30px;
+  color:white;
+  float:right;
+  line-height:80px;
+  margin-right:40px;
+  cursor:pointer;
+  display:none;
+  background: #1C603F;
+
+}
+#check {
+  display:none;
+}
+.borderlinks{
+    display: inline-block;
+    border:1px solid white;
+    border-radius:60px;
+    padding:0rem;
+    margin-top: 1rem;
+    height:3.2rem;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    width:auto;
+    height:auto;
+    font-size:1.5rem;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a{
+    color: black;
+  
+    text-decoration: none;
+    display: block;
+margin-top: -6rem;
+    font-size: 0.7rem;
+
+}
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+@media (max-width:952px) {
+    nav{
+        background-color: black;
+    }
+ 
+  label.logo {
+    font-size:30px;
+    padding-left:50px; 
+margin-top: 0.5rem;
+      margin-left: -6rem;
+
+  }
+  label.logo img{
+    height:2rem
+  }
+  nav ul li a {
+    font-size:16px;
+  }
+}
+@media (max-width:858px) {
+  .checkbtn {
+    display:block;
+    position: absolute;
+    right:0;
+    background-color: transparent;
+  }
+
+  ul {
+    position: fixed;
+    height:100vh;
+    width:100%;
+    background: #2c3e50;
+    top:80px;
+    left:-100%;
+    text-align:center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display:block;
+    line-height:30px;
+    margin:50px 0;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active,a:hover {
+    background:none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left:0;
+  }
+  .clubname{
+    display: inline-block;
+    margin-left:0rem;
+    margin-top: 0rem;
+}
+.clubname h3{
+    margin-top:-3rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1rem;
+}
+.clubname h2{
+    margin-top:0rem;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1rem;
+}
+.borderlinks{
+    display: inline-block;
+    border:0px solid white;
+    border-radius:60px;
+    padding:0rem;
+    margin-top: 1rem;
+    height:3.2rem;
+}
+.dropdown-content a{
+    color: black;
+  
+    text-decoration: none;
+    display: block;
+margin-top:-0.7rem;
+    font-size: 0.7rem;
+
+}
+
+}

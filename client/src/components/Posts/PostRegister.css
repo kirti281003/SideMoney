@@ -1,0 +1,289 @@
+.postform{
+    width:60vw;
+    height:auto;
+   margin-left: auto;
+   margin-right: auto;
+    background-color: #282828;
+    box-shadow: 0px 0px 20px black;
+    border:1px solid black;
+    padding:2rem;
+    align-items:center;
+  
+}
+ .postform h1{
+    font-size: 1.5rem;
+    display:block;
+    text-align: center;
+    margin-top:0.2rem;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+} 
+hr{
+    color:white;
+
+}
+.login_field{
+    display: inline-block;
+    margin-top:0.6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.login_field label{
+    display: block;
+    margin-top: 0;
+    margin-bottom:0.4rem;
+    
+}
+
+.textareainput{
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 5px; 
+}
+
+.buttonsection{
+    display: block;
+}
+.green{
+    background-color: #247A4D;
+    color:white;
+    padding:0.3rem 2rem;
+    margin:1rem 3rem 0rem 30rem;
+    border:none;
+    border-radius:5px;
+}
+.white{
+    color: #247A4D;
+    background-color:white;
+    padding:0.3rem 2rem;
+    margin:3rem;
+    border:none;
+    border-radius:5px;
+}
+
+
+
+
+
+
+@media(max-width:700px)
+{
+    .postform{
+        width:95vw;
+        height:auto;
+       margin-left: auto;
+       margin-right: auto;
+        background-color: #282828;
+        box-shadow: 0px 0px 20px black;
+        border:1px solid black;
+        padding:0rem;
+        align-items:center;
+      
+    }
+     .postform h1{
+        font-size: 1.5rem;
+        display:block;
+        text-align: center;
+        margin-top:0.2rem;
+        color:white;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    hr{
+        color:white;
+    
+    }
+    .login_field{
+        display: inline-block;
+        margin-top:0.6rem;
+        margin-left:0rem;
+        margin-right: 0rem;
+    }
+    .login_field label{
+        display: block;
+        margin-top: 0;
+        margin-bottom:0.4rem;
+        
+    }
+    .login_field .logininput{
+        width:80vw;
+
+    }
+    
+    .textareainput{
+        border: 1px solid white;
+        background: transparent;
+        border-radius: 5px; 
+        width:80vw;
+    }
+    
+    .button_section{
+        display: block;
+        margin-top: 0rem;
+    }
+    .green{
+        background-color: #247A4D;
+        color:white;
+        padding:0.3rem 2rem;
+        margin:1rem 0rem 0rem 2rem;
+        border:none;
+        border-radius:5px;
+    }
+    .white{
+        color: #247A4D;
+        background-color:white;
+        padding:0.3rem 2rem;
+        margin:3rem 0rem 3rem 3rem;
+        border:none;
+        border-radius:5px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .postform{
+    margin-top: 4rem;
+    overflow-y:auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.postform label{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #6287de;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+    border-right: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 40%;
+	transition: .2s;
+    margin-bottom: 3rem;
+
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6287de;
+}
+.textarea__input {
+	border: none;
+	border: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	transition: .2s;
+
+}
+.postform button{
+    width:18rem;
+    height: 3rem;
+    font-size: 1rem;
+    color:white;
+    background-color: #6287de;
+    text-align: center;
+    font-weight: 700;
+    margin-left: 4rem;
+    border-radius: 20px;
+}
+
+@media(max-width:700px)
+{
+    .postform{
+        margin-top: 4rem;
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left:1.5rem;
+    
+    }
+    .postform label{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    .login__field {
+        padding: 20px 0px;	
+        position: relative;	
+    }
+    
+    .login__icon {
+        position: absolute;
+        top: 30px;
+        color: #6287de;
+    }
+    
+    .login__input {
+        border: none;
+        border-bottom: 2px solid #D1D1D4;
+        border-right: 2px solid #D1D1D4;
+        background: none;
+        padding: 10px;
+        padding-left: 24px;
+        font-weight: 700;
+        width: 80%;
+        transition: .2s;
+        margin-bottom: 3rem;
+    
+    }
+    
+    .login__input:active,
+    .login__input:focus,
+    .login__input:hover {
+        outline: none;
+        border-bottom-color: #6287de;
+    }
+    .textarea__input {
+        border: none;
+        border: 2px solid #D1D1D4;
+        background: none;
+        padding: 10px;
+        padding-left: 24px;
+        font-weight: 700;
+        transition: .2s;
+        width:90vw;
+    
+    }
+    .postform button{
+        width:18rem;
+        height: 3rem;
+        font-size: 1rem;
+        color:white;
+        background-color: #6287de;
+        text-align: center;
+        font-weight: 700;
+        margin-left: 1.5rem;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+    }
+} */

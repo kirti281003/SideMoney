@@ -1,0 +1,455 @@
+.HomeContainer{
+    height:100vh;
+}
+.homehead{
+    position: absolute;
+    top:10rem;
+    left:18rem;
+}
+.homehead h1{
+    color: white;
+    font-size: 4.5rem;
+}
+.homehead h2{
+    color: white;
+    margin-top: -0.5rem;
+    font-size: 4.5rem;
+}
+.homehead div{
+    color:white;
+    font-size:2rem;
+    margin-top: 1rem;
+}
+.homeright{
+    position: absolute;
+    right:8rem;
+   
+    top:5rem;
+}
+.join{
+    color: #1C603F;
+    background-color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+@media(max-width:700px)
+{
+    .HomeContainer{
+        height:100vh;
+    }
+    .homehead{
+        position: absolute;
+        top:8rem;
+        left:1rem;
+    }
+    .homehead h1{
+        color: white;
+        font-size: 2.5rem;
+    }
+    .homehead h2{
+        color: white;
+        margin-top: -0.5rem;
+        font-size: 2.5rem;
+    }
+    .homehead div{
+        color:white;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .homeright{
+        position: absolute;
+        right:0rem;
+        height:10rem;
+        top:5rem;
+    }
+.join{
+        color: #1C603F;
+        background-color: white;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+
+}
+/* .HomeContainer{
+    height:100vh;
+    
+}
+.homeright{
+    position: absolute;
+    top:4rem;
+    right:8rem;
+}
+.homehead{
+    position: absolute;
+    top:10rem;
+    left:8rem;
+    color:white;
+    width:30rem
+}
+.homehead h1{
+    font-size:4.5rem;
+    color:white;
+}
+.homehead h2{
+    font-size:4.5rem;
+    color:white;
+    margin-left: 0rem;
+    margin-top: -2rem;
+    margin-bottom: 0;
+}
+.homehead span{
+    font-size: 1.5rem;
+    display: block;
+}
+.homehead button{
+    background-color: white;
+    color:#1C603F;
+    border:none;
+    margin-top: 2rem;
+    width:8rem;
+    height:2.5rem;
+    border-radius:10px;
+    font-weight: 600;
+    
+    
+}
+@media(max-width:700px)
+{
+    .HomeContainer{
+        height:100vh;
+        width:90vw;
+    }
+    .homeright{
+        position: absolute;
+        top:6rem;
+        right:0rem;
+        height:10rem;
+    }
+    .homehead{
+        position: absolute;
+        top:10rem;
+        left:2rem;
+        color:white;
+        width:30rem
+    }
+    .homehead h1{
+        font-size:2.5rem;
+        color:white;
+        margin-bottom: 0.5rem;
+    }
+ 
+    .homehead h2{
+        font-size:2.5rem;
+        color:white;
+        margin-left: 0rem;
+        margin-top: -1rem;
+        margin-bottom: 0;
+    }
+    .homehead span{
+        font-size: 1rem;
+        display: block;
+    }
+    .homehead button{
+        background-color: white;
+        color:#1C603F;
+        border:none;
+        margin-top: 2rem;
+        width:8rem;
+        height:2.5rem;
+        border-radius:10px;
+        font-weight: 600;
+        
+        
+    }
+} */
+
+/* .HomeContainer{
+    margin-top: 8rem;
+    height:90vh;
+    width:100vw;
+}
+.homehead{
+    width:35vw;
+
+    margin-top: -4rem;
+    margin-left: 10rem;
+}
+.HomeContainer h1{
+    font-size:4.2rem;
+        color:white;
+    font-weight: 700;
+}
+.homespan{
+    font-size:1.5rem;
+    font-weight:500;
+    color: white;
+}
+.homeright{
+    position: absolute;
+    right:3rem;
+    top:7rem;
+
+}
+.aimlist{
+    margin-top: 5rem;
+}
+.aim{
+
+    width:18rem;
+    display:inline-block;
+    font-size: 1.3rem;
+    margin-left: 4rem;
+    height:10rem;
+    padding:2.3rem;
+    border-radius: 40px;
+    box-shadow: 0px 0px 14px white;
+    font-weight: bold;
+    color:white
+    
+}
+.icon{
+    display: inline-block;
+    margin-right:1.5rem;
+}
+.buttonicon{
+    color:#5F85DB;
+}
+.aimcontent{
+    display: inline-block;
+}
+.aim:hover{
+    transform:scale(1.2);
+}
+.aim:hover .icon{
+    transform:scale(1.5);
+} */
+/* .vectorleftlight{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    
+}
+.vectorleftdark{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index:100;
+}
+.homeright{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    height:25rem;
+
+}
+.homeleft{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    height:25rem;
+
+}
+.homeabout{
+    width:18rem;
+    border:1px solid black;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+.homearrow{
+    margin-right: auto;
+    margin-left: auto;
+    width:1rem;
+    margin-top: 3rem;
+}
+.arrowImg{
+    height:1rem;
+}
+.right{
+    position: absolute;
+    right:3rem;
+    top:25rem;
+}
+.rightdiv{
+    border:1px solid white;
+    font-size:2rem;
+    width:32rem;
+    color:white;
+    padding:1rem;
+    margin-top:2rem;
+    box-shadow:0px 0px 50px black;
+}
+.rightdiv:hover{
+    border:1px solid white;
+    font-size:2rem;
+    width:32rem;
+    background-color: black;
+    color:white;
+    padding:1rem;
+    margin-top:2rem;
+    box-shadow: 0px 0px 0px #000;
+}
+.rightdiv:hover .button_icon{
+transform: scale(1.2);
+}
+.button_icon{
+    margin-left: 5rem;
+    color:#5F85DB;
+}
+
+@media(max-width:1024px)
+{
+    .HomeContainer{
+        margin-top:10rem;
+        height:80vh;
+    }
+    .homehead{
+        width:90vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -4rem;
+    }
+    .HomeContainer h1{
+        font-size:3.3rem;
+        text-align: center;
+    }
+    .vectorleftlight{
+        position: absolute;
+        left:0;
+        bottom: 0;
+       
+        height:15rem;
+    }
+    .vectorleftdark{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        height:12rem;
+        z-index:100;
+    }
+    .homeright{
+        position: absolute;
+        right:0;
+        bottom: 0;
+        height:15rem;
+    
+    }
+    .homeleft{
+        position: absolute;
+        right:0;
+        bottom:0rem;
+        height:15rem;
+    
+    }
+    .right{
+        position: absolute;
+        right:1rem;
+        top:23rem;
+    }
+    .rightdiv{
+        border:1px solid white;
+        font-size:1.5rem;
+        width:90vw;
+        color:white;
+        padding:1rem;
+        margin-top:2rem;
+    }
+    .rightdiv:hover{
+        border:1px solid white;
+        font-size:1.5rem;
+        width:90vw;
+        background-color: black;
+        color:white;
+        padding:1rem;
+        margin-top:2rem;
+        box-shadow: 0px 0px 0px #000;
+    }
+    .button_icon{
+        margin-left: 2rem;
+        color:#5F85DB;
+    }
+} */
+/* @media(max-width:700px)
+{
+
+    .HomeContainer{
+        margin-top: 4rem;
+        height:90vh;
+        width:100vw;
+        overflow-y: scroll;
+
+
+    }
+    .homehead{
+        width:90vw;
+        
+        margin-top:0rem;
+ 
+        margin-left:2rem;
+       z-index:10000;
+    }
+    .homehead h1{
+        font-size:2rem;
+        color:white;
+        font-weight: 700;
+        margin-bottom: 2rem;
+   
+ 
+    }
+    .homespan{
+        font-size:1rem;
+        font-weight:500;
+
+    }
+    .homeright{
+        position: absolute;
+        right:0rem;
+        top:5rem;
+        height:8rem;
+        z-index:-1;
+    
+    }
+    .aimlist{
+        margin-top: 5rem;
+        margin-left:-1rem;
+        
+    }
+    .aim{
+
+        width:18rem;
+        display:inline-block;
+        font-size: 1.2rem;
+
+        margin-bottom: 2rem;
+        height:8rem;
+        padding:1.5rem;
+        border-radius: 20px;
+        box-shadow: 0px 0px 14px black;
+        font-weight: bold;
+        
+    }
+    .icon{
+        display: inline-block;
+        margin-right:1.5rem;
+    }
+    .buttonicon{
+        color:#5F85DB;
+    }
+    .aimcontent{
+        display: inline-block;
+    }
+    .aim:hover{
+        transform:scale(1.2);
+    }
+    .aim:hover .icon{
+        transform:scale(1.5);
+    }
+
+} */

@@ -1,0 +1,218 @@
+/* .flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .flexcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20%;
+    align-items: baseline;
+    height: 14rem;
+    border-radius: 20px;
+    
+  }
+  
+  .flexcardNumber {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 10px 0px;
+    border-radius: 0px 50px 50px 0px;
+    font-family: 'Jost', sans-serif;
+    color: white;
+    text-shadow: 0px 3px 5px black;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+  }
+  
+  .flexcardTitle {
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 400;
+  }
+  
+  .flexcardText {
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  .flexcardNumber:before {
+    content: '';
+    width: 34px;
+    height: 90px;
+    position: absolute;
+    left: -33px;
+    top: 0px;
+    border-radius: 50px 0px 0px 50px;
+    z-index: -1;
+
+    background: -moz-linear-gradient(bottom, #95B7A2, #AED2BC);
+
+  }
+  
+  .flexcardNumber:after {
+    content: '';
+    width: 25px;
+    height: 40px;
+    position: absolute;
+    left: -25px;
+    bottom: -40px;
+    border-radius: 50px 0px 0px 50px;
+    z-index: -1;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px auto;
+  }
+  
+  img.flexcardimgItem {
+    width: 50%;
+  }
+  
+  /* GREEN CARD */
+  
+  .acceptcard{
+    background-color: #282828;
+    box-shadow: 0px 0px 12px black;
+    border:1px solid black;
+    width:16vw;
+    height:15vw;
+    border-radius:10px;
+
+  }
+  .namecard{
+    background-color: #247A4D;
+    color:white;
+    width:10rem;
+    height:1.8rem;
+    border-radius:5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+  .viewsubbutton{
+    background-color: none;
+    margin-left: 5rem;
+  }
+  .acceptcard h1{
+    color:white;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    margin-left:4.5rem;
+ 
+  }
+  .arrow{
+    margin-left: 2rem;
+  }
+  .acceptcard h6{
+    color:white;
+    font-size: 1.2rem;
+    margin-top:1rem;
+    text-align: center;
+  }
+  .decision{
+    width:15vw;
+    margin-top:2rem;
+  }
+  .accept{
+    background-color: #247A4D;
+    color:white;
+    text-align: center;
+    width:5rem;
+    border: none;
+    margin-left:2rem;
+    margin-right:1.5rem;
+    padding: 0.4rem;
+  }
+  .reject{
+    background-color: #6F0000;
+    color:white;
+    text-align: center;
+    width:5rem;
+    border: none;
+    padding: 0.4rem;
+    
+  }
+  @media(max-width:700px)
+  {
+    .acceptcard{
+        background-color: #282828;
+        box-shadow: 0px 0px 12px black;
+        border:1px solid black;
+        width:70vw;
+        height:60vw;
+        border-radius:10px;
+    
+      }
+      .namecard{
+        background-color: #247A4D;
+        color:white;
+        width:10rem;
+        height:1.8rem;
+        border-radius:5px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+      }
+      .viewsubbutton{
+        background-color: none;
+        margin-left: 5rem;
+      }
+      .acceptcard h1{
+        color:white;
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0;
+        margin-left:4.5rem;
+     
+      }
+      .arrow{
+        margin-left: 2rem;
+      }
+      .acceptcard h6{
+        color:white;
+        font-size: 1.2rem;
+        margin-top:1rem;
+        text-align: center;
+      }
+      .decision{
+        width:70vw;
+        margin-top:2rem;
+      }
+      .accept{
+        background-color: #247A4D;
+        color:white;
+        text-align: center;
+        width:5rem;
+        border: none;
+        margin-left:1.5rem;
+        
+        padding: 0.4rem;
+      }
+      .reject{
+        background-color: #6F0000;
+        color:white;
+        text-align: center;
+        width:5rem;
+        border: none;
+        padding: 0.4rem;
+        margin-left: 2rem;
+        
+      }
+  }

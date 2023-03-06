@@ -1,0 +1,240 @@
+
+.subpage{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+.subpage h2{
+    color:white;
+    font-size: 2rem;
+
+}
+
+.subpage .gradient{
+    width:70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height:10rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),url("../../images/holo.png");
+    border-radius: 20px;
+}
+.subimg{
+    height:10rem;
+    position: relative;
+    left:50vw;
+}
+.pitch{
+    margin-top: 3rem;
+    color: white;
+    width:45vw;
+}
+.links{
+    margin-top: 3rem;
+    color: white;
+    width:10vw;
+    position: absolute;
+    right:18em;
+    top:22rem;
+    
+}
+.singleLink{
+margin-top: 1rem;
+background-color: #247A4D;
+width:22vw;
+padding-left:1rem;
+padding-right: 1rem;
+border-radius: 5px;
+}
+.linkhead{
+margin-right: 1rem;
+font-size: 1.2rem;
+}
+.linkurl{
+color:white;
+}
+@media(max-width:700px)
+{
+    
+.subpage{
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+.subpage h2{
+    color:white;
+    font-size: 2rem;
+
+}
+
+.subpage .gradient{
+    width:90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height:10rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),url("../../images/holo.png");
+    border-radius: 20px;
+}
+.subimg{
+    height:10rem;
+    position: relative;
+    left:25vw;
+}
+.pitch{
+    margin-top: 3rem;
+    color: white;
+    width:90vw;
+}
+.links{
+    margin-top: 0rem;
+    color: white;
+    width:10vw;
+    position:inherit;
+
+    
+}
+.singleLink{
+margin-top: 1rem;
+background-color: transparent;
+}
+.linkhead{
+margin-right: 1rem;
+font-size: 1.2rem;
+background-color: #247A4D;
+padding-left:1rem;
+padding-right: 1rem;
+border-radius: 5px;
+margin-left: -1rem;
+}
+.linkurl{
+color:white;
+}
+}
+/* .subPage{
+    height:100vh;
+
+}
+.subBody{
+    display: inline-block;
+    width:40vw;
+    margin-left:10rem;
+    margin-top:2rem;
+    border:2px solid black;
+    padding:4rem;
+    background: linear-gradient(to left, #fff, #5f85db);
+    box-shadow: 0px 0px 24px black;
+    font-weight:bolder;
+}
+.subBody h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.subPage img{
+position: absolute;
+right:8rem;
+top:8rem;
+height:20rem;
+}
+.linkSection{
+    position: absolute;
+    right:10rem;
+    margin-top: -8rem;
+}
+.singleLink{
+margin-bottom:0.5rem;
+margin-left: 1rem;
+}
+.linkhead{
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-right: 2.3rem;
+    color:#fff;
+}
+.linkSection h3{
+    text-align:center;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#fff;
+    margin-top: 3rem;
+
+}
+.linkurl{
+    font-size: 1.5rem;
+}
+.linkurl:hover{
+    background: none;
+    text-decoration: none;
+}
+.status{
+    color:white;
+    margin-left:10rem;
+    margin-top: 1rem;
+    text-shadow: 0px 0px 14px white;
+}
+@media(max-width:700px)
+{
+    .subPage{
+        height:100vh;
+    
+    }
+    .subBody{
+        display: inline-block;
+        width:90vw;
+        margin-left:1rem;
+        margin-top:2rem;
+        border:2px solid black;
+        padding:4rem;
+        background: linear-gradient(to left, #fff, #5f85db);
+        box-shadow: 0px 0px 24px black;
+        font-weight:bolder;
+    }
+    .subBody h2{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+    .subPage img{
+    position: relative;
+  left:1.3rem;
+    height:10rem;
+    margin-top: -7rem;
+
+    }
+    .linkSection{
+       position: relative;
+       margin-top: 9rem;
+       left:0rem;
+    }
+    .singleLink{
+    margin-bottom:0.5rem;
+    margin-left:4.5rem;
+    }
+    .linkhead{
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-right: 2.3rem;
+        color:#fff;
+    }
+    .linkSection h3{
+        text-align:center;
+        font-weight: bolder;
+        font-size: 1.4rem;
+        margin-bottom:1rem;
+        color:#fff;
+    
+    }
+    .linkurl{
+        font-size: 1rem;
+    }
+    .status{
+        color:white;
+        margin-left:7rem;
+        margin-top: -1rem;
+        text-shadow: 0px 0px 14px white;
+    }
+} */

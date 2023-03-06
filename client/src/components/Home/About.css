@@ -1,0 +1,82 @@
+.aboutcontainer{
+    height: 80vh;
+    width:100vw;
+}
+.aboutcontainer h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    color: white;
+}
+.aboutbody{
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color:white;
+
+}
+.vectorleft{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+.vectorright{
+    position: absolute;
+    right:0;
+    bottom: 0;
+
+}
+.topright{
+    position: absolute;
+    top:6rem;
+    right:0rem;
+}
+.bottomleft{
+    position: absolute;
+    bottom: 0;
+    left:0rem;
+}
+@media(max-width:1024px)
+{
+    .aboutbody{
+        width:90vw;
+        margin-left: auto;
+        margin-right: auto;  
+        margin-top: 2rem;
+        font-size: 1rem;
+    
+    }
+    .vectorleft{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        z-index:-1;
+        height:12rem;
+        width:12rem;
+    }
+    .vectorright{
+        position: absolute;
+        right:0;
+        bottom: 0;
+        z-index:-1;
+        height:12rem;
+        width:12rem;
+    
+    }
+    .topright{
+        position: absolute;
+        top:6rem;
+        right:0rem;
+        height:15rem;
+    }
+    .bottomleft{
+        position: absolute;
+        bottom: 0;
+        left:0rem;
+        height:15rem;
+
+    }
+
+}

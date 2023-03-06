@@ -1,0 +1,23 @@
+.homecard{
+    width:20rem;
+    height:15rem;
+    background-color:#A6D1D1 ;
+    margin-top:0rem;
+}
+.boyImg{
+    height:8.5rem;
+    margin-top: 1.5rem;
+}
+.boyimage{
+    text-align: center;
+}
+.footer{
+    height: 4rem;
+    width:20rem;
+    background-color: #298ccd;
+    z-index:100;
+   text-align: center;
+   margin-top: 1.5rem;
+   font-size: 1.4rem;
+   color:white;
+}
