@@ -2,10 +2,19 @@ import "./Header.css";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 function Header() {
+  var style={
+
+  }
+  function closenav()
+  {
+    style={
+      display:"none"
+    }
+  }
 return(
   <>
     <nav>
-  <input type="checkbox" id="check"/>
+  <input type="checkbox" id="check" />
   <label for="check" class="checkbtn">
     <i class="fas fa-bars"></i>
   </label>
@@ -18,13 +27,13 @@ return(
     <h3>IGDTUW</h3>
     </div>
   </label>
-  <ul>
+  <ul style={style} >
   <div className="borderlinks">
-    <li><Link to="/" >Home</Link></li>
-    <li><Link to="/about">About</Link></li>
+    <li><Link to="/"  onClick='closeNav()'>Home</Link></li>
+    <li><Link to="/about" onClick='closeNav()'>About</Link></li>
     </div>
-    <li><Link to="/login">Login</Link></li>
-    <li><Link to="/signup">SignUp</Link></li>
+    <li><Link to="/login" onClick='closeNav()'>Login</Link></li>
+    <li><Link to="/signup" onClick='closeNav()'>SignUp</Link></li>
     
   </ul>
 </nav>

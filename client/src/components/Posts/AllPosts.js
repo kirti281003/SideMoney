@@ -20,8 +20,8 @@ function AllPosts()
   
   const[keyword,setQuery]=useState("");
     const dispatch=useDispatch();
-    const{loading,error,posts}=useSelector(state=>state.posts)
-    const {isAuthenticated,user}=useSelector(state=>state.user);
+    const{error,posts}=useSelector(state=>state.posts)
+    const {isAuthenticated,user,loading}=useSelector(state=>state.user);
     if(visible>posts.length){
     var  style={
         backgroundColor:"#282828",
@@ -38,12 +38,12 @@ function AllPosts()
 
     useEffect(()=>
     {
+  
         dispatch(getUser())
         dispatch(allPosts())
-      
+  
        
     },[dispatch])
-
 
     return(
         <>
@@ -81,5 +81,7 @@ function AllPosts()
     )
        
         
+
+
 }
 export default AllPosts;

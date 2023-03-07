@@ -85,7 +85,12 @@ hr{
 
 
 @media(max-width:700px)
-{
+{.textareainput{
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 5px; 
+    width:20rem;
+}
     .postform{
         width:95vw;
         height:auto;
@@ -127,14 +132,6 @@ hr{
         width:80vw;
 
     }
-    
-    .textareainput{
-        border: 1px solid white;
-        background: transparent;
-        border-radius: 5px; 
-        width:80vw;
-    }
-    
     .button_section{
         display: block;
         margin-top: 0rem;
@@ -161,6 +158,16 @@ hr{
         width:90vw;
         margin-left: auto;
         margin-right: auto;
+    }
+    .loginimageinput{
+        width:80vw;
+        border-radius:10px;
+        height:2.5rem;
+        margin-top:0rem;
+        background:transparent;
+        border:1px solid white;
+        color:white;
+        padding:0rem;
     }
     
 }

@@ -13,7 +13,14 @@ function del()
 dispatch(deletePost(post._id));
 window.location.href="/posts/user";
 }
-
+function redirect2()
+{
+    window.location.href=url2;
+}
+function redirect()
+{
+    window.location.href=url;
+}
 //    return(
 //     <>
 // <div class="wrapper">
@@ -57,8 +64,8 @@ return(
             <p>{post.body.substring(0,100)}...</p>
      
             <div className="buttonsection">
-            <Link to={url2} className="subLink">{name2}</Link>
-            <Link to={url} className="linkButton">{name}</Link>                      
+            <button onClick={redirect2} className="subLink">{name2}</button>
+            <button onClick={redirect} className="linkButton">{name}</button>                      
             </div>
         </div>
     </>

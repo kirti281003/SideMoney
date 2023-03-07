@@ -110,7 +110,7 @@ function PostRegister()
             </div>
             <div class="login_field">
             <label>Description</label> 
-    		<textarea type="text" rows="3" cols="100" class="textareainput" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}/>
+    		<textarea type="text" rows="3" class="textareainput" style={{color:"white"}} onChange={(e)=>setBody(e.target.value)}/>
     		</div>
             <div class="login_field">
             <label>Deadline</label>		

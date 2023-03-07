@@ -11,7 +11,7 @@ export const login = (email, password) => async (dispatch) => {
   
       const config = { headers: { "Content-Type": "application/json" } };
      
-      const { data } = await axios.post(`/api/v1/login`,
+      const { data } = await axios.post(`/api/api/v1/login`,
         { email, password },
         config
       );
@@ -32,7 +32,7 @@ export const login = (email, password) => async (dispatch) => {
       const config = { headers: { "Content-Type": "application/json" } };
   
       const { data } = await axios.post(
-        `/api/v1/register`,
+        `/api/api/v1/register`,
         { email, password,name,username },
         config
       );
@@ -50,7 +50,7 @@ export const login = (email, password) => async (dispatch) => {
       dispatch({
         type:LOGOUT_REQUEST
       })
-      const {data}=await axios.get("/api/v1/logout");
+      const {data}=await axios.get("/api/api/v1/logout");
       console.log(data);
       dispatch({
         type:LOGOUT_SUCCESS,
@@ -73,7 +73,7 @@ export const login = (email, password) => async (dispatch) => {
       dispatch({
         type:USER_REQUEST
       })
-      const {data}=await axios.get(`/api/v1/user`);
+      const {data}=await axios.get(`/api/api/v1/user`);
       console.log(data);
       dispatch({
         type:USER_SUCCESS,

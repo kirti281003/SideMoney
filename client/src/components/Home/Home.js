@@ -14,7 +14,7 @@ import HomeCard from "./HomeCard";
 function Home()
 {const{isAuthenticated}=useSelector(state=>state.user);
 console.log(isAuthenticated);
-    // const dispatch=useDispatch();
+    const dispatch=useDispatch();
     // useEffect(()=>
     // {
     //     dispatch(getUser());

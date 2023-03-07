@@ -24,7 +24,7 @@ function SubmissionRegister()
     const{error,postsub}=useSelector(state=>state.sub)
 console.log(postsub);
     useEffect(()=>
-    {
+    {dispatch(getUser());
          dispatch(getPost(id));
         if(error)
         {

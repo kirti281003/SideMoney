@@ -123,6 +123,7 @@ hr{
         border: 1px solid white;
         background: transparent;
         border-radius: 5px; 
+        width:80vw;
     }
     .sign__input{
         width:7rem;

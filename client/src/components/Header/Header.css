@@ -170,18 +170,19 @@ a:active{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color:transparent;
     color:white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-top:6rem;
+   
+  
   }
   
   /* Links inside the dropdown */
 .dropdown-content a{
     color: black;
-  
+    background-color:#1C603F;
     text-decoration: none;
     display: block;
 margin-top: -6rem;
@@ -196,7 +197,7 @@ margin-top: -6rem;
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: #1C603F;}
 @media (max-width:952px) {
     nav{
         background-color: black;
@@ -284,5 +285,15 @@ margin-top:-0.7rem;
     font-size: 0.7rem;
 
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:transparent;
+    color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:1rem;
+  }
 
 }

@@ -21,7 +21,15 @@ function Header2()
    window.onunload = function() { void (0) }
     window.location.href="/login";
 }
+var style={
 
+}
+function closenav()
+{
+  style={
+    display:"none"
+  }
+}
 //     
 return(
   <>
@@ -39,11 +47,11 @@ return(
     <h3>IGDTUW</h3>
     </div>
   </label>
-  <ul>
+  <ul style={style}>
   <div className="borderlinks">
-    <li><Link to="/" >Home</Link></li>
-    <li><Link to="/about">About</Link></li>
-    <li><Link to="/posts">Posts</Link></li>
+    <li><Link to="/" onClick='closeNav()' >Home</Link></li>
+    <li><Link to="/about" onClick='closeNav()'>About</Link></li>
+    <li><Link to="/posts"onClick='closeNav()'>Posts</Link></li>
     </div>
     <li><Link to="/logout" onClick={logoutSubmit}>Logout</Link></li>
    <li>
@@ -51,7 +59,7 @@ return(
   <button class="dropbtn">User ({user.username})</button>
   <div class="dropdown-content">
 
-    <a href="/createPost">Create New Post</a><br></br>
+    <a href="/createPost" >Create New Post</a><br></br>
     <a href="/posts/user">Your Posts</a><br></br>
     <a href="/user/submissions">Your Submissions</a>
   </div>

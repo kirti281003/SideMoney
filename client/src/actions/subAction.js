@@ -8,7 +8,7 @@ export const registerSub=(body,links,photo,id,name)=>async(dispatch)=>{
         const config = { headers: { "Content-Type": " multipart/form-data " } };
     
         const { data } = await axios.post(
-          `/api/v1/setSubmission/${id}`,
+          `/api/api/v1/setSubmission/${id}`,
           { body,links,photo,name },
           config
         );
@@ -25,7 +25,7 @@ export const registerSub=(body,links,photo,id,name)=>async(dispatch)=>{
 export const getSubmission=(id)=>async(dispatch)=>{
     try{
         dispatch({type:GET_SUB_REQUEST})
-       const {data}=await axios.get(`/api/v1/getSubmission/${id}`)
+       const {data}=await axios.get(`/api/api/v1/getSubmission/${id}`)
        dispatch({type:GET_SUB_SUCCESS,payload:data.sub})
     }
     catch(error)
@@ -36,7 +36,7 @@ export const getSubmission=(id)=>async(dispatch)=>{
 export const submissions=()=>async(dispatch)=>{
     try{
         dispatch({type:USER_SUB_REQUEST})
-       const {data}=await axios.get(`/api/v1/user/submissions`)
+       const {data}=await axios.get(`/api/api/v1/user/submissions`)
        dispatch({type:USER_SUB_SUCCESS,payload:data.sub})
     }
     catch(error)
@@ -48,7 +48,7 @@ export const submissions=()=>async(dispatch)=>{
 export const postsubmissions=(id)=>async(dispatch)=>{
     try{
         dispatch({type:ALL_SUB_REQUEST})
-       const {data}=await axios.get(`/api/v1/submissions/${id}`)
+       const {data}=await axios.get(`/api/api/v1/submissions/${id}`)
        dispatch({type:ALL_SUB_SUCCESS,payload:data.sub})
     }
     catch(error)
@@ -60,7 +60,7 @@ export const postsubmissions=(id)=>async(dispatch)=>{
 export const acceptedsubmissions=()=>async(dispatch)=>{
     try{
         dispatch({type:ACCEPTED_SUB_REQUEST})
-       const {data}=await axios.get(`/api/v1/accepted/submissions`)
+       const {data}=await axios.get(`/api/api/v1/accepted/submissions`)
        dispatch({type:ACCEPTED_SUB_SUCCESS,payload:data.sub})
     }
     catch(error)
@@ -74,7 +74,7 @@ try{
 dispatch({
     type:ACCEPTED_SUB_REQUEST
 })
-const {data}=await axios.put(`/api/v1/getSubmission/${id}/${msg}`)
+const {data}=await axios.put(`/api/api/v1/getSubmission/${id}/${msg}`)
 dispatch({
     type:ACCEPTED_SUB_SUCCESS,
     payload:data.message
@@ -95,7 +95,7 @@ export const deleteSub=(id)=>async(dispatch)=>{
         dispatch({
             type:DELETE_SUB_REQUEST
         })
-const{data}=await axios.get(`/api/v1/sub/delete/${id}`);
+const{data}=await axios.get(`/api/api/v1/sub/delete/${id}`);
          dispatch({
             type:DELETE_SUB_SUCCESS,
             payload:data.message

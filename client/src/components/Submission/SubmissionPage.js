@@ -61,13 +61,19 @@ const SubmissionPage=()=>{
                     <h4>Links</h4>
                     {links &&
         links.map(link=>
-       
-        (<div className="singleLink">
+        {
+            if(link.title!="")
+            {
+                <div className="singleLink">
             <span className="linkhead">{link.title}</span>
          
             <a href={link.url} className="linkurl">{link.url}</a>
             </div>
-        ))}
+            }
+        }
+       
+       
+        )}
                     
                   
                

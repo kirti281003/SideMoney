@@ -9,7 +9,7 @@ export const registerPost=(heading,category,body,skills,deadline,steps,photo)=>a
       const config = { headers: { "Content-Type": " multipart/form-data " } };
   
       const { data } = await axios.post(
-        `/api/v1/createPost`,
+        `/api/api/v1/createPost`,
         { heading,category,body,deadline,skills,steps,photo },
         config
       );
@@ -30,7 +30,7 @@ export const registerPost=(heading,category,body,skills,deadline,steps,photo)=>a
                 type:ALL_POST_REQUEST
             }
         )
-        const {data}=await axios.get(`/api/v1/posts?keyword=${keyword}`);
+        const {data}=await axios.get(`/api/api/v1/posts?keyword=${keyword}`);
         console.log(data);
         dispatch(
             {
@@ -59,7 +59,7 @@ export const registerPost=(heading,category,body,skills,deadline,steps,photo)=>a
                 type:USER_POST_REQUEST
             }
         )
-        const {data}=await axios.get("/api/v1/posts/user");
+        const {data}=await axios.get("/api/api/v1/posts/user");
         console.log(data);
         dispatch(
             {
@@ -88,7 +88,7 @@ export const registerPost=(heading,category,body,skills,deadline,steps,photo)=>a
                 type:POST_REQUEST
             }
         )
-        const {data}=await axios.get(`/api/v1/post/${id}`);
+        const {data}=await axios.get(`/api/api/v1/post/${id}`);
         console.log(data);
         dispatch(
             {
@@ -117,7 +117,7 @@ export const registerPost=(heading,category,body,skills,deadline,steps,photo)=>a
         dispatch({
             type:DELETE_POST_REQUEST
         })
-const{data}=await axios.get(`/api/v1/post/delete/${id}`);
+const{data}=await axios.get(`/api/api/v1/post/delete/${id}`);
          dispatch({
             type:DELETE_POST_SUCCESS,
             payload:data.message
