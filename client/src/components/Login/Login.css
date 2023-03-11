@@ -82,7 +82,8 @@ font-style: normal;
     width:25rem;
     border-radius: 10px;
     height:2.5rem;
-    color:white
+    color:white;
+    padding:1rem;
 }
 .signtop h1{
     margin-left:0rem;

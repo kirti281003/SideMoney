@@ -94,7 +94,7 @@ console.log(postsub);
                 <hr></hr>
                 <div className="button__section">
                 <button className="green1">Submit</button>
-                <button className="white" onClick={close}>Close</button>
+                {/* <button className="white" onClick={close}>Close</button> */}
             </div>
                
             </form>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getPost, post } from "../../actions/postActions";
 import { getUser } from "../../actions/userActions";
 import "./Post.css";
@@ -9,6 +9,7 @@ const Post=()=>{
     const dispatch=useDispatch();
     const{loading,post}=useSelector(state=>state.post)
     const {id}=useParams();
+    const image=post.image;
     useEffect(()=>{
             dispatch(getPost(id));
             dispatch(getUser());
@@ -44,20 +45,37 @@ const Post=()=>{
             <div className="postpage">
                 <h1>{post.heading}</h1>
                 <div className="gradient">
-                <img src={post.image} className="postimg"></img>
+                {/* <img src={post.image} className="postimg"></img> */}
                 </div>
                 <h6>Deadline : {post.deadline}</h6>
                 <div className="desc">
                     <h4>Description</h4>
                     <p>{post.body}</p>
                 </div>
+              { image &&
+                    
+                        <div>
+                    <Link to={post.image}  className="attachment">View attachment</Link>
+                </div>
+                    
+              }
+               
                 <div className="skills">
+                
                     <h4>Skills</h4>
-               <p> {post.skills} </p> 
+                {skills &&
+               skills.split(",").map(skill=>{
+                return(
+                    <p>#{skill}</p>
+                )
+
+               }
+               )
+               } 
                     
                   
                   <br></br>
-                   <button onClick={tosub}>Apply</button>
+                   <button onClick={tosub}>Apply Now</button>
                 </div>
             </div>
         </>

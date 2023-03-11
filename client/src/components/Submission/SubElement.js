@@ -30,7 +30,7 @@ return(
         <div class="acceptcard">
             <div class=" namecard">{sub.postname} <button className="deletesub" onClick={del}><i class="delicon fas fa-trash"></i></button></div>
                <h1>{sub.username}<i class=" arrow fa fa-regular fa-arrow-up-right-from-square" onClick={viewsubfunc}></i></h1>
-               <h6>Date : 1st March,2023</h6>
+               <h6 className="date">Date : {sub.date.slice(0,10)}</h6>
                     
                 </div>
 

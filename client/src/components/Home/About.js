@@ -3,7 +3,14 @@ import VectorRight from "../../images/VectorRight.png";
 import topright from "../../images/topright.png";
 import bottomleft from "../../images/bottomleft.png";
 import "./About.css";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { getUser } from "../../actions/userActions";
 function About(){
+    // const dispatch=useDispatch();
+    // useEffect(()=>{
+    //     dispatch(getUser());
+    // })
     return(
         <>
         <div className="aboutcontainer">

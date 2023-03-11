@@ -50,7 +50,7 @@ export const login = (email, password) => async (dispatch) => {
       dispatch({
         type:LOGOUT_REQUEST
       })
-      const {data}=await axios.get("/api/api/v1/logout");
+      const {data}=await axios.post("/api/api/v1/logout");
       console.log(data);
       dispatch({
         type:LOGOUT_SUCCESS,

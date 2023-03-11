@@ -55,9 +55,10 @@ function redirect()
 return(
     <>
         <div className="postcard">
-       
+        <button className="righttrash" onClick={del}>{trash}</button> 
       
-            <h1>{post.heading}  <button className="righttrash" onClick={del}>{trash}</button></h1>
+            <h1>{post.heading} </h1>
+          
          
             <h3>Deadline : {post.deadline}</h3>
             <h6>Description</h6>

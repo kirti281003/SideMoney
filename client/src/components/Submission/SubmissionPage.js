@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getSubmission } from "../../actions/subAction";
 import { getUser } from "../../actions/userActions";
 import "./SubmissionPage.css";
@@ -51,29 +51,37 @@ const SubmissionPage=()=>{
              <div className="subpage">
             <h2>Status : {sub.accepted}</h2>
                 <div className="gradient">
-                <img src={sub.image} className="subimg"></img>
+             
                 </div>
                 <div className="pitch">
                     <h4>Pitch</h4>
                     <p>{sub.body}</p>
                 </div>
+                <div>
+                    <Link to={sub.image}  className="attachment">View attachment</Link>
+                </div>
                 <div className="links">
                     <h4>Links</h4>
+          
+
                     {links &&
         links.map(link=>
         {
             if(link.title!="")
-            {
+            {return(
                 <div className="singleLink">
             <span className="linkhead">{link.title}</span>
          
             <a href={link.url} className="linkurl">{link.url}</a>
             </div>
+            )
             }
         }
+            
+        )
        
        
-        )}
+        }
                     
                   
                

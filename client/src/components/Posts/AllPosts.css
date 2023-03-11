@@ -14,7 +14,7 @@
   
   height:2rem;
   border-radius: 10px;
-    background-color:#247A4D;
+  background-color:#282828;
     position:relative;
     top:3rem;
     left:20rem;
@@ -23,7 +23,7 @@
     
 }
 .searchbox input{
-    width:16rem;
+    width:17rem;
     height:2rem;
     background-color:#282828;
     border:none;
@@ -55,6 +55,23 @@
     top:1.5rem;
     font-size: 2rem;
 }
+.gradientsub h1{
+    color:white;
+    text-align: center;
+    z-index:1000;
+    position: relative;
+    top:2.25rem;
+    font-size: 2rem;
+}
+.gradientsub{
+    width:60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height:7rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.27)),url("../../images/holo.png");
+    border-radius: 20px;
+}
 .showmore{
     background-color: #247A4D;
     color:white;
@@ -73,6 +90,7 @@
     color:white;
     border:none;
 }
+
 @media(max-width:1024px)
 {
     .Post{

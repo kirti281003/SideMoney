@@ -16,6 +16,7 @@ function AllPosts()
     setVisible((prevValue) => prevValue + 6);
     
   };
+
   
   
   const[keyword,setQuery]=useState("");
@@ -45,6 +46,7 @@ function AllPosts()
        
     },[dispatch])
 
+if(isAuthenticated){
     return(
         <>
           {/* <div className="searchbox">
@@ -54,10 +56,12 @@ function AllPosts()
          
           <div className="gradient">
           <h1>FIND OPPORTUNITIES</h1>
-          <div className="searchbox">
+          <form className="searchbox" onSubmit={filter}>
+          
+          <img src={search} onClick={filter} id="myInput"></img>
             <input type="text" placeholder="Search By Category" onChange={(e)=>setQuery(e.target.value)}/>
-            <img src={search} onClick={filter}></img>
-          </div>
+         
+          </form>
           </div>
 
         <div className="Post">
@@ -79,7 +83,15 @@ function AllPosts()
           
         </>
     )
-       
+}
+else
+{
+  return(
+    <>
+      Please Login
+    </>
+  )
+}
         
 
 

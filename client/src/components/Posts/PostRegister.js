@@ -128,7 +128,7 @@ function PostRegister()
             
             <div className="button_section">
                 <button className="green">Submit</button>
-                <button className="white" onClick={close}>Close</button>
+                {/* <button className="white" onClick={close}>Close</button> */}
             </div>
              </form>
         </>

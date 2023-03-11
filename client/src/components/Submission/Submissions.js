@@ -21,8 +21,8 @@ const Submissions=()=>
 
     return(
         <>
-        <div className="gradient">
-          <h1>SUBMISSIONS</h1>
+        <div className="gradientsub">
+          <h1> YOUR SUBMISSIONS</h1>
           </div>
         <div className="flexbox">
         {

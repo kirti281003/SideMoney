@@ -1,7 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Courgette&family=Lobster&family=Montserrat:wght@100;200&family=Patrick+Hand&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Courgette&family=Lobster&family=Montserrat:wght@100;200;300&family=Patrick+Hand&display=swap');
 .HomeContainer{
     height:60vh;
 }
@@ -9,25 +8,22 @@
     position: absolute;
     top:10rem;
     left:15rem;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Caveat', cursive;
-    font-family: 'Courgette', cursive;
-    font-family: 'Lobster', cursive;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Patrick Hand', cursive;
+  
 }
 .homehead h1{
     color: white;
     font-size: 4.5rem;
+
 }
 .homehead h2{
     color: white;
     margin-top: -0.5rem;
     font-size: 4.5rem;
+    font-weight: 400;
 }
 .homehead div{
     color:white;
-    font-size:2rem;
+    font-size:1.5rem;
     margin-top: 1rem;
 }
 .homeright{
@@ -43,6 +39,7 @@
     border: none;
     border-radius: 5px;
     margin-top: 1rem;
+    font-weight: 600;
 }
 .explorepage{
     display: flex;

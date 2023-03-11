@@ -21,7 +21,6 @@
     width:10rem;
     height:1.8rem;
     border-radius:5px;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -35,7 +34,7 @@
     font-size: 1.5rem;
     margin-top: 1.2rem;
     margin-bottom: 0;
-   margin-left: -2rem;
+
  
   }
   .arrow{
@@ -72,7 +71,10 @@
     background-color: transparent;
     color:white;
     border: none;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+  }
+  .date{
+    margin-bottom: 2rem;
   }
   @media(max-width:700px)
   {
@@ -83,6 +85,7 @@
         width:60vw;
         height:60vw;
         border-radius:10px;
+        margin-bottom: 1rem;
     
       }
       .namecard{

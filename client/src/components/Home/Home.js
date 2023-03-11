@@ -12,14 +12,14 @@ import { getUser } from "../../actions/userActions";
 import { useEffect } from "react";
 import HomeCard from "./HomeCard";
 function Home()
-{const{isAuthenticated}=useSelector(state=>state.user);
-console.log(isAuthenticated);
+{const{isAuthenticated,user}=useSelector(state=>state.user);
+console.log(user);
     const dispatch=useDispatch();
-    // useEffect(()=>
-    // {
-    //     dispatch(getUser());
+    useEffect(()=>
+    {
+        dispatch(getUser());
 
-    // },[dispatch])
+    },[dispatch])
  
 function toSignUp()
 {

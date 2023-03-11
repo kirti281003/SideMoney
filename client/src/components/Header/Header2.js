@@ -56,15 +56,16 @@ return(
     <li><Link to="/logout" onClick={logoutSubmit}>Logout</Link></li>
    <li>
    <div class="dropdown">
-  <button class="dropbtn">User ({user.username})</button>
+  <button class="dropbtn">User({user.username})</button>
   <div class="dropdown-content">
-
-    <a href="/createPost" >Create New Post</a><br></br>
-    <a href="/posts/user">Your Posts</a><br></br>
-    <a href="/user/submissions">Your Submissions</a>
+ 
+<a href="/createPost" >Create New Post<hr></hr></a><br></br>
+    <a href="/posts/user">Your Posts<hr></hr></a><br></br>
+    <a href="/user/submissions">Your Submissions<hr></hr></a>
   </div>
 </div>
-</li>
+</li> 
+
     
   </ul>
 </nav>
